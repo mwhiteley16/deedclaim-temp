@@ -1,0 +1,128 @@
+{
+    "key": "group_62a10be113483",
+    "title": "Page Hero and BG Options",
+    "fields": [
+        {
+            "key": "field_6454240dcc626",
+            "label": "Hide Title",
+            "name": "hide_title",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Do you want to hide the page title?",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62a10be8b26c5",
+            "label": "Custom H1",
+            "name": "custom_h1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6454240dcc626",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_645921321bc3a",
+            "label": "Background Color",
+            "name": "background_color",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "white-bg": "White",
+                "grey-bg": "Gray"
+            },
+            "default_value": "white-bg",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "default"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "tpl-plans.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "tpl-our-team.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "tpl-directory.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "tpl-flexible.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "tpl-pricing.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "tpl-select-deed.php"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "page.php",
+    "show_in_rest": 0,
+    "modified": 1683563135
+}

@@ -1,0 +1,233 @@
+{
+    "key": "group_628bfb3fa925a",
+    "title": "Sidebar",
+    "fields": [
+        {
+            "key": "field_628bfdb8b73e8",
+            "label": "Call to Action",
+            "name": "call_to_action",
+            "type": "radio",
+            "instructions": "CTAs can be updated under Theme Options",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default CTA",
+                "custom": "Custom CTA",
+                "none": "No CTA"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "default",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_628bfb8cbdb64",
+            "label": "Custom CTA",
+            "name": "custom_cta",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_628bfdb8b73e8",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_628c0383bd2e8",
+            "label": "CTA Background",
+            "name": "cta_bg",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bb": "Bounding Box",
+                "yellow": "Yellow",
+                "grey": "Grey"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "bb",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_628fe7ce89039",
+            "label": "Rating",
+            "name": "show_rating",
+            "type": "radio",
+            "instructions": "Default Rating can be edited under Theme Options > Sidebar.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "No Rating",
+                "default": "Default Rating",
+                "custom": "Custom Rating"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "none",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_62b60c83610a8",
+            "label": "Custom Rating",
+            "name": "custom_rating",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_628fe7ce89039",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_628d32ac2f7b9",
+            "label": "Choose Sidebar Menu 1",
+            "name": "sidebar_menu_1",
+            "type": "radio",
+            "instructions": "Menus can be updated under Appearance > Menu.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default Side Menu",
+                "alt": "Alternate Side Menu",
+                "none": "No Menu"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "none",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_628d35352f7ba",
+            "label": "Sidebar Menu 2 Title",
+            "name": "sidebar_menu_2_title",
+            "type": "text",
+            "instructions": "Optional. Leave blank and menu will not display.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_628d35452f7bb",
+            "label": "Sidebar Menu 2 Links",
+            "name": "sidebar_menu_2_links",
+            "type": "relationship",
+            "instructions": "Optional.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post",
+                "page"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1657047393
+}

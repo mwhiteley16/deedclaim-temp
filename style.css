@@ -1,0 +1,18 @@
+/*
+Theme Name: Go Fish Theme
+Author: Alison Iddings
+Author URI: https://gofishdigital.com/
+Version: 1.2
+*/
+
+/* 
+
+Styles can be edited under css/style.scss
+Function.php pulls from minified version css/style.min.css
+
+Global Scripts can be edited under js/scripts.js
+Function.php pulls from minified version js/scripts.min.js
+
+Bootstrap CSS - Can be used by uncommenting line in functions.php
+
+*/

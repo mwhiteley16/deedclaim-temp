@@ -1,0 +1,51 @@
+{
+    "key": "group_628be247bf887",
+    "title": "References",
+    "fields": [
+        {
+            "key": "field_628be25caddd1",
+            "label": "References",
+            "name": "references",
+            "type": "wysiwyg",
+            "instructions": "Add list of references.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "page.php",
+    "show_in_rest": 0,
+    "modified": 1656005655
+}

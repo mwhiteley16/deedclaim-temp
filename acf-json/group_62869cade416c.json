@@ -1,0 +1,150 @@
+{
+    "key": "group_62869cade416c",
+    "title": "Heading",
+    "fields": [
+        {
+            "key": "field_631f86f5479c7",
+            "label": "Heading Type",
+            "name": "heading_type",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "simple": "Simple Heading",
+                "full": "Full Heading",
+                "none": "No Heading",
+                "pf": "Show Pre-Footer from Theme Options"
+            },
+            "default_value": "simple",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_62869cade68e0",
+            "label": "Heading Text",
+            "name": "heading_text",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Optional. H1 should be added here.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_631f86f5479c7",
+                        "operator": "==",
+                        "value": "simple"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_631f86f5479c7",
+                        "operator": "==",
+                        "value": "full"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_631f8738479c8",
+            "label": "Image",
+            "name": "heading_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_631f86f5479c7",
+                        "operator": "==",
+                        "value": "full"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-flexible.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-directory.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-plans.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-select-deed.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-our-team.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "heading-simple USED ON: Flexible, Directory, Plans",
+    "show_in_rest": 0,
+    "modified": 1683564856
+}
